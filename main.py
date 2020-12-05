@@ -3,9 +3,9 @@ Ziel der Demo:
 Einfache DB-Abfrage über Python erstellen
 
 Markus Part:
-- Datenbank mit Testdaten
-    - User Table in Datenbank
-- Eine MapperKlasse: UserMapper.py
+- Datenbank mit Testdaten [x]
+    - User Table in Datenbank [x]
+- Eine MapperKlasse: UserMapper.py [ ]
 
 """
 import mysql.connector as connector
@@ -13,35 +13,41 @@ myco = connector.connect(host="127.0.0.1", user="root",
 passwd="root", db="samstag", charset="utf8")
 cursor = myco.cursor()
 
-try:
-    cursor = myco.cursor()
-    cursor.execute("select * from user order by full_name")
-    rows = cursor.fetchall()
-
-    print("Total rows: " + str(len(rows)),
-    "Columns: "+"Name, Salary [€]",
-    sep=" | ")
-    print("Rows found:")
+def sql(query):
     
-    for row in rows:
-        print((row[0]), (row[1]), sep=", ")
-    
-    cursor.close()
+    try:
+        cursor = myco.cursor()
+        cursor.execute(query)
+        rows = cursor.fetchall()
 
-except connector.Error as error:
-    print("Failed.", error)
+        print("Total rows: " + str(len(rows)),
+        "Columns: "+"Name, Salary [€]",
+        sep=" | ")
+        print("Rows found:")
+        
+        for row in rows:
+            print((row[0]), (row[1]), sep=", ")
+        
+        cursor.close()
 
-finally: 
-    if myco:
-        myco.close()
-        print()
+    except connector.Error as error:
+        print("Failed.", error)
+
+    finally: 
+        if myco:
+            myco.close()
+            print()
+
+
 
 # SQL Queries [Select by Uncomment]
 
 # query = "select 'hello'"
+query = "select * from user order by full_name"
 # query = "INSERT INTO tablename (field1, field2, field3, field4) VALUES (%s, %s, %s, %s)"
 # query = ""
 
+sql(query)
 
 
 # cursor.execute(query)
