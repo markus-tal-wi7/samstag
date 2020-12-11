@@ -4,11 +4,23 @@ passwd="root", db="samstag", charset="utf8")
 cursor = myco.cursor()
 
 cursor = myco.cursor()
-# select query
-query = "select * from user order by id"
-# query = "select 'hello'"
+# [SELECT BY UNCOMMENTING]
+query=\
+"describe user"
+# "select * from user order by id"
+# "select 'hello'"
+
 cursor.execute(query)
 rows = cursor.fetchall()
+
+# spalten in array auslesen
+"""
+columns = []
+for row in rows:
+    columns.append(row[0])
+print(columns)
+"""
+
 
 for row in rows:
     for i in range(len(row)):
