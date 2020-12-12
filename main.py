@@ -7,7 +7,7 @@ Markus Aufgaben vom 05.12.:
     - User Table in Datenbank [x]
 - Eine MapperKlasse: UserMapper.py [x]
     - Einige Funktionen [ ] <<<
-        - bspw. find_all(), find_by_name()
+        bspw. find_all(), find_by_name()
 """
 # Für spätere Aufteilung: importiere Klassen
 from src.server.bo import User
