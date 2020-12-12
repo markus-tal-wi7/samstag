@@ -1,4 +1,4 @@
-from server.bo import BusinessObject as bo
+import BusinessObject as bo
 
 class User(bo.BusinessObject):
     """Code basierend Auf Bankbeispiel.
@@ -52,3 +52,7 @@ class User(bo.BusinessObject):
         obj.set_email(dictionary["email"])
         obj.set_user_id(dictionary["user_id"])
         return obj
+
+# testing imports and class inheritance (successful)
+""" testUser = User()
+print(testUser.testvar)  """
