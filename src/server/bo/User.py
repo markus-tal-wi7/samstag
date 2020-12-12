@@ -1,7 +1,7 @@
-from  import BusinessObject as bo
+from BusinessObject import BusinessObject as bo
 
 
-class User (bo.BusinessObject):
+class User(bo):
     """Realisierung einer exemplarischen Benutzerklasse.
 
     Aus Gründen der Vereinfachung besitzt der Kunden in diesem Demonstrator
