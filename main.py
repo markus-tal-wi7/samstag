@@ -10,8 +10,8 @@ Markus Aufgaben vom 05.12.:
 
 """
 # Für spätere Aufteilung: importiere Klassen
-from src.server.bo.User import User
-from src.server.db.Mapper.py import Mapper
+from src.server.bo import User
+from src.server.db import Mapper
 
 # Verbindung zur Datenbank ("DB") herstellen
 import mysql.connector as connector
@@ -89,10 +89,8 @@ class UserMapper:
     """
     def __init__(self):
             super().__init__()
-    def __init__(self):
-        pass
     def find_all(self):
-        pass
+        return ("User1", "User2", "User3") #Demo-Tuple
     def find_by_name(self, name):
         pass
     def find_by_key(self, key):
@@ -106,6 +104,6 @@ um die grundsätzliche Funktion zu überprüfen.
 Anmerkung: Nicht professionell aber hilfreich..."""
 if (__name__ == "__main__"):
     # with UserMapper() as mapper:
-        result = UserMapper.find_all()
+        result = UserMapper.find_all(UserMapper) #arg temporary
         for user in result:
             print(user)

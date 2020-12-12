@@ -1,8 +1,8 @@
-from BusinessObject import BusinessObject as bo
+from server.bo import BusinessObject as bo
 
-
-class User(bo):
-    """Realisierung einer exemplarischen Benutzerklasse.
+class User(bo.BusinessObject):
+    """Code basierend Auf Bankbeispiel.
+    Realisierung einer exemplarischen Benutzerklasse.
 
     Aus Gründen der Vereinfachung besitzt der Kunden in diesem Demonstrator
     lediglich einen einfachen Namen, eine E_Mail-Adresse sowie eine außerhalb
