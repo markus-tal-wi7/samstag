@@ -6,7 +6,7 @@ Markus Aufgaben vom 05.12.:
 - Datenbank mit Testdaten [x]
     - User Table in Datenbank [x]
 - Eine MapperKlasse: UserMapper.py [x]
-    - Einige Funktionen [ ] <<<
+    - Einige Funktionen [ ] <<
         bspw. find_all(), find_by_name()
 """
 # Für spätere Aufteilung: importiere Klassen
