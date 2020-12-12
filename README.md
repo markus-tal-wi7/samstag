@@ -14,5 +14,5 @@ Dann kann man die DB über das Dump importieren.
 Die main.py gibt Demo-Daten aus (aktuell User).
 
 Nach erfolgreichem Clonen und MySQL-Connector-Anbindung kann die main.py ausgeführt werden. 
-An dem Zusammenspiel der Mapper-Dateien arbeite ich noch (2020-12-12).
-
+An dem Zusammenspiel der Mapper-Dateien wird noch gearbeitet (2020-12-12).
+Dafür ist Kooperation zwischen DB und BO erforderlich (2020-12-12).
