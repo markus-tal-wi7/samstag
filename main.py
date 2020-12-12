@@ -5,9 +5,9 @@ Funktionierende Architektur (Frontendseite mit Daten aus Datenbank)
 Markus Aufgaben vom 05.12.:
 - Datenbank mit Testdaten [x]
     - User Table in Datenbank [x]
-- Eine MapperKlasse: UserMapper.py [ ]
-    - Einige Funktionen [ ]
-
+- Eine MapperKlasse: UserMapper.py [x]
+    - Einige Funktionen [ ] <<<
+        - bspw. find_all(), find_by_name()
 """
 # Für spätere Aufteilung: importiere Klassen
 from src.server.bo import User

@@ -57,5 +57,5 @@ class User(BO.BusinessObject):
         return obj
 
 # testing imports and class inheritance (successful)
-testUser = User()
-print(testUser.testvar) 
+""" testUser = User()
+print(testUser.testvar)  """
