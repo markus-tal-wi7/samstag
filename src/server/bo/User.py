@@ -1,6 +1,9 @@
-import BusinessObject as bo
+if __name__ == "__main__":
+    import BO
+else:
+    from src.server.bo import BO
 
-class User(bo.BusinessObject):
+class User(BO.BusinessObject):
     """Code basierend Auf Bankbeispiel.
     Realisierung einer exemplarischen Benutzerklasse.
 
@@ -54,5 +57,5 @@ class User(bo.BusinessObject):
         return obj
 
 # testing imports and class inheritance (successful)
-""" testUser = User()
-print(testUser.testvar)  """
+testUser = User()
+print(testUser.testvar) 
