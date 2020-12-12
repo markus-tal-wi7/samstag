@@ -1,7 +1,9 @@
 if __name__ == "__main__":
     import BO
+    #causing import error: "unable to import"
 else:
     from src.server.bo import BO
+    #causing import error: "unable to import"
 
 class User(BO.BusinessObject):
     """Code basierend Auf Bankbeispiel.
